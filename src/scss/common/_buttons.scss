@@ -1,0 +1,55 @@
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-family: $btn-ff;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+
+  &--lg {
+    font-size: $btn-fz-lg;
+    padding: 14px 40px;
+  }
+
+  &--sm {
+    font-size: $btn-fz-sm;
+    padding: 12px 30px;
+  }
+
+  &--default {
+    background-color: $btn-default-bg;
+    color: $btn-default-text-color;
+
+    &:hover {
+      background-color: $btn-default-bg-hover;
+    }
+  }
+
+  &--secondary {
+    background-color: $btn-secondary-bg;
+    color: $btn-secondary-text-color;
+
+    &:hover {
+      background-color: $btn-secondary-bg-hover;
+    }
+  }
+
+  &--primary {
+    background-color: $btn-primary-bg;
+    color: $btn-primary-text-color;
+
+    &:hover {
+      background-color: $btn-primary-bg-hover;
+    }
+  }
+
+  &--disabled {
+    background-color: $btn-disabled-bg;
+    color: $btn-disabled-text-color;
+
+    &:hover {
+      background-color: $btn-disabled-bg;
+      cursor: not-allowed;
+    }
+  }
+}
